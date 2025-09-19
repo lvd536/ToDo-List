@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="heading">
+        <section class="heading__section">
+            <nav class="nav__elements">
+                <ul class="nav__items">
+                    <li class="nav__item">
+                        <img src="img/logo.svg" alt="" class="header__logo">
+                        <h3 class="header__naming">TaskMaster</h3>
+                    </li>
+                    <li class="nav__item">
+                        <img src="img/avatar.png" alt="" class="header__avatar">
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__line"></div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="main__section">
+            <div class="wrapper">
+                <div class="main__heading">
+                    <h3 class="main__heading-text">My Tasks</h3>
+                    <button class="main__heading-btn">New Task</button>
+                </div>
+                <div class="main__body">
+                    <h3 class="main__title">Pending</h3>
+                    <ul class="main__pending">
+                    </ul>
+                    <h3 class="main__title">Completed</h3>
+                    <ul class="main__completed">
+                    </ul>
+                </div>
+                <div class="task__settings">
+                    <h3 class="form__title">Add Task</h3>
+                    <form action="/" class="task__form">
+                        <label for="taskTitle" class="form__label">Task Title</label>
+                        <input type="text" name="taskTitle" id="taskTitle" class="form__input" required>
+
+                        <label for="taskDate" class="form__label">Due Date</label>
+                        <input type="datetime-local" name="taskDate" id="taskDate" class="form__input" required>
+
+                        <div class="task__form-buttons">
+                        <button type="button" class="task__form-button task__form-cancel">Cancel</button>
+                        <button type="submit" class="task__form-button task__form-save">Save</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+    <script type="module" src="js/taskManager.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
